@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>
+    Tareas de Entrega 01 Proyecto Apis.
+  </title>
+  <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='estilos.css')}}">
+  
+</head>  
+
+  <h1>
+  <p>Tareas que a realizar tanto en twitter como en google calendar.<p/>
+  </h1>
+
+<body>
+  <div>
+    <table BORDER=0 CELLPADDING=3 CELLSPACING=3 WIDTH=200 VALIGN=CENTER>      	
+	<tr><td>
+		<form action="/formulariofechaexamen" method="POST">
+		<input type="submit" name="my-form" class="button buttonBlue" value="Publicar fecha de examen">
+		</form>
+	  </td><td>
+		<form action="/vermytwitter" method="POST">
+	  	<input type="submit" name="my-form" class="button buttonBlue" value="Ver my twitter" >
+		</form>
+	  </td><td>
+		<form action="/vermygooglecalendar" method="POST">
+		<input type="submit" name="my-form" class="button buttonBlue" value="Ver my google calendar">
+		</form>
+	  </td></tr>
+	<tr><td>
+		<form action="/formularionotasexamen" method="POST">
+		<input type="submit" name="my-form" class="button buttonBlue" value="Publicar notas de examen">
+		</form>
+	  </td><td>
+		<form action="/vermytwitter" method="POST">
+	  	<input type="submit" name="my-form" class="button buttonBlue" value="Ver my twitter">		
+		</form>
+	  </td><td>
+		<form action="/vermyhojadecalculo" method="POST">
+		<input type="submit" name="my-form" class="button buttonBlue" value="Ver my Hoja de calculo">
+		</form>
+	  </td></tr>
+	<tr><td></td><td>
+		<form action="/salir" method="POST">
+		<input type="submit" name="my-form" class="button buttonBlue" value="Salir">
+		</form>
+	</td><td></td></tr>     
+    </table>
+  </div>
+</body>
+</html>

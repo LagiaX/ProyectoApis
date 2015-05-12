@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>
+    Publicar fecha de examen.
+  </title>
+  <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='style1.css')}}">  
+</head>  
+  <h1>
+  <p>Formulario para publicar fecha del examen.<p/>
+  </h1>
+  <p>Rellene el formulario con los datos necesarios para publicar la fecha del examen, esta fecha se publicara en su twitter y google caldendar, para que los alumnos suscritos puedan verlo.<p/> 
+
+<body>
+  <div>
+    <table BORDER=0  CELLPADDING=10 CELLSPACING=10>
+      <tr>	
+	<td WIDTH=200 VALIGN=TOP>
+	<form action="/publicar" method="POST">
+	  Asignatura: <input type="text" name="asignatura">
+	  Profesor: <input type="text" name="profesor">
+	  Examen  : <input type="text" name="tipoexamen">
+	  Fecha   : <input type="text" name="fechaexamen">
+	  Comentario : <textarea cols="30" rows="7" name="comentarios"></textarea> 
+	  <input type="submit" name="my-form" class="button buttonBlue" value="publicar">	  	  
+	</form>
+	</td>	
+	</tr>
+     </table>
+  </div>
+</body>
+</html>

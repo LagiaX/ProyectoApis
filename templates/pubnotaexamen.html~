@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>
+    Publicar Notas de examen.
+  </title>
+  <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='estilos.css')}}">  
+</head>  
+  <h1>
+  <p>Formulario para publicar nota de cada alumno.<p/>
+  </h1>
+  <p>Rellene el formulario con los datos necesarios para publicar la fecha del examen, esta fecha se publicara en su twitter y google caldendar, para que los alumnos suscritos puedan verlo.<p/> 
+
+<body>
+  <div>
+    <table BORDER=0  CELLPADDING=10 CELLSPACING=10>
+      <tr>	
+	<td WIDTH=200 VALIGN=TOP>
+	<form action="/agregaralumno" method="POST">
+	  Alumno: <input type="text" name="alumno">
+	  Nota  : <input type="text" name="nota">
+	  <input type="submit" name="my-form" class="button buttonBlue" value="Agregar Alumno">
+	</form>
+	</td>	
+      </tr>
+      <tr>	
+	<tr>	
+	  <td>
+		<form action="/publicarnotas" method="POST">
+		<input type="submit" name="my-form" class="button buttonBlue" value="Publicar Notas">
+		</form>
+	  </td>
+	</tr>
+      </tr>
+     </table>
+  </div>
+</body>
+</html>
