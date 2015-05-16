@@ -12,16 +12,42 @@
 
 <body>
   <div>
+   <table width="400" BORDER=0  CELLPADDING=10 CELLSPACING=10>
+   <tr><td>
    <form action="/agregarnotaalumno" method="POST">
 	<table width="400" BORDER=0  CELLPADDING=0 CELLSPACING=0>
 	 <tr><td>Alumno:</td><td> <input type="text" name="alumno"> </td></tr>
 	 <tr><td>Nota:</td><td> <input type="text" name="nota"> </td></tr>
+	 <tr><td>Estado:</td><td> <input type="text" name="estado"> </td></tr>
 	</table>
      <input type="submit" name="my-form" class="button buttonBlue" value="Agregar nota del alumno">
    </form>
+   </td></tr>
+   <tr><td>
+   <form action="/eliminarnotaalumno" method="POST">
+	<table width="400" BORDER=0  CELLPADDING=0 CELLSPACING=0>
+	 <tr><td>Nombre:</td><td> <input type="text" name="alumno"> </td></tr>	 
+	</table>
+     <input type="submit" name="my-form" class="button buttonBlue" value="Eliminar nota del alumno">
+   </form>
+   </td></tr>
+   <tr><td>
+   <form action="/modificarnotaalumno" method="POST">
+	<table width="400" BORDER=0  CELLPADDING=0 CELLSPACING=0>
+	 <tr><td>Alumno:</td><td> <input type="text" name="alumno"> </td></tr>
+	 <tr><td>Nota:</td><td> <input type="text" name="nota"> </td></tr>
+	</table>
+     <input type="submit" name="my-form" class="button buttonBlue" value="Modificar nota del alumno">
+   </form>
+   </td></tr>
+   </table>
 
 	<form action="/publicarnotasexamen" method="POST" style="display:inline">
-	   <input type="submit" name="my-form" class="button buttonBlue" value="Publicar Hoja de calculo & twitt" >
+	   <input type="submit" name="my-form" class="button buttonBlue" value="Actualizar Notas (google & twitt)" >
+	</form>		
+	<form action="/vernotas" method="POST" style="display:inline">
+	   <input type="submit" name="my-form" class="button buttonBlue" value="Tabla de Notas">
+	</form>	
 	</form>		
 	<form action="/tareas" method="POST" style="display:inline">
 	   <input type="submit" name="my-form" class="button buttonBlue" value="Tareas">		
